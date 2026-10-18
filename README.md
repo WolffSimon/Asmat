@@ -6,7 +6,7 @@ Asmat is a Georgian-language model in design at mAIself. This repository holds t
 
 - [DESIGN.md](DESIGN.md): design considerations for a Georgian language model, version 0.1 of 18 October 2026. It covers the tokeniser, training text and its authorship, training method, evaluation, speech and OCR, and the law, and it ends with the decisions still open.
 - [briefs/](briefs/): five research briefs on Kartvelian language resources, token cost by language, tokenisation and language coverage, benchmark methods, and Georgian text sources and licensing. [briefs/README.md](briefs/README.md) explains how they were compiled and where they disagree.
-- [dutu/](dutu/): Dutu, a distinct project within this repository, which scopes a model for Megrelian (Mingrelian). It starts with a measurement of what Megrelian costs on six tokenizers.
+- [dutu/](dutu/): Dutu, a distinct project within this repository, which scopes a model for Mingrelian (Megrelian). It starts with a measurement of what Mingrelian costs on six tokenizers.
 
 ## Related work
 

@@ -1,10 +1,10 @@
-# Token cost of Megrelian on six tokenizers
+# Token cost of Mingrelian on six tokenizers
 
 Measured by Matthew Wolff Simon of mAIself on 18 October 2026, and rerun from a clean folder the same day with identical output.
 
-Each figure is the number of tokens a tokenizer needs for a set of strings in one language, divided by the number it needs for the same strings in English. A figure of 2.00 means twice as many tokens as English. The strings are the 1,067 interface messages of Mozilla Common Voice that exist in English, Georgian and Megrelian.
+Each figure is the number of tokens a tokenizer needs for a set of strings in one language, divided by the number it needs for the same strings in English. A figure of 2.00 means twice as many tokens as English. The strings are the 1,067 interface messages of Mozilla Common Voice that exist in English, Georgian and Mingrelian.
 
-| Tokenizer | Georgian | Megrelian | Megrelian ÷ Georgian | English tokens (baseline) |
+| Tokenizer | Georgian | Mingrelian | Mingrelian ÷ Georgian | English tokens (baseline) |
 |---|---|---|---|---|
 | GPT-4 (cl100k) | 9.67 | 9.25 | 0.96 | 12,233 |
 | GPT-4o (o200k) | 1.84 | 2.52 | 1.37 | 12,121 |
@@ -17,13 +17,13 @@ Every tokenizer decoded its output back to the exact input text in every languag
 
 ## What it shows
 
-Megrelian costs more than Georgian on the three tokenizers that handle Georgian well. On GPT-4o's tokenizer Megrelian needs 2.52 times English and Georgian needs 1.84 times, a difference of 37%. The difference is 19% on Gemma 3 and 13% on Mistral-Nemo.
+Mingrelian costs more than Georgian on the three tokenizers that handle Georgian well. On GPT-4o's tokenizer Mingrelian needs 2.52 times English and Georgian needs 1.84 times, a difference of 37%. The difference is 19% on Gemma 3 and 13% on Mistral-Nemo.
 
-On the three tokenizers that handle Georgian badly, Megrelian and Georgian cost about the same: between nine and ten times English on GPT-4's and Llama 3's tokenizers, and about five times on Qwen3's. Megrelian comes out 4% cheaper there because its strings are 4% shorter, at 62,431 characters against 64,960.
+On the three tokenizers that handle Georgian badly, Mingrelian and Georgian cost about the same: between nine and ten times English on GPT-4's and Llama 3's tokenizers, and about five times on Qwen3's. Mingrelian comes out 4% cheaper there because its strings are 4% shorter, at 62,431 characters against 64,960.
 
-Three letters in the Megrelian strings do not occur in Georgian: ჷ, ჸ and ჲ. They appear in 3% of Megrelian words. Removing them lowers Megrelian's token count by 1.4% or less on every tokenizer. Most of the extra cost therefore comes from Megrelian word forms that the tokenizers did not learn. A vocabulary extended for Megrelian would need those word forms as well as the letters.
+Three letters in the Mingrelian strings do not occur in Georgian: ჷ, ჸ and ჲ. They appear in 3% of Mingrelian words. Removing them lowers Mingrelian's token count by 1.4% or less on every tokenizer. Most of the extra cost therefore comes from Mingrelian word forms that the tokenizers did not learn. A vocabulary extended for Mingrelian would need those word forms as well as the letters.
 
-Mistral-Nemo is the base model of Kona2, the Georgian-first model from Tbilisi AI Lab. Before Kona2 added its 20,000 Georgian tokens, Mistral-Nemo's tokenizer needed 2.51 times English for Georgian and 2.85 times for Megrelian. Kona2's own tokenizer was not measured (see Limits).
+Mistral-Nemo is the base model of Kona2, the Georgian-first model from Tbilisi AI Lab. Before Kona2 added its 20,000 Georgian tokens, Mistral-Nemo's tokenizer needed 2.51 times English for Georgian and 2.85 times for Mingrelian. Kona2's own tokenizer was not measured (see Limits).
 
 ## Agreement with the Georgian measurement
 
@@ -31,12 +31,13 @@ The Georgian figures here are close to those measured on the Universal Declarati
 
 ## Method
 
-- **Text.** The Fluent (.ftl) localisation files for English (en), Georgian (ka) and Megrelian (xmf) in [github.com/common-voice/common-voice](https://github.com/common-voice/common-voice) at commit 96aff6ac498817e0cb6b0c6422d349812d4768c6 (18 October 2026). Mozilla publishes them under the Mozilla Public License 2.0. fetch_cv.sh fetches them, and they are not copied into this repository.
+- **Text.** The Fluent (.ftl) localisation files for English (en), Georgian (ka) and Mingrelian (xmf) in [github.com/common-voice/common-voice](https://github.com/common-voice/common-voice) at commit 96aff6ac498817e0cb6b0c6422d349812d4768c6 (18 October 2026). Mozilla publishes them under the Mozilla Public License 2.0. fetch_cv.sh fetches them, and they are not copied into this repository.
 - **Alignment.** extract_cv.py keeps a message, or a message attribute, when all three locales have it: 1,186 messages. It drops variables and references, keeps the default variant of each plural or select expression, removes markup tags, collapses whitespace and normalises the text to Unicode NFC.
-- **Exclusions.** 107 Megrelian strings were identical to the Georgian and were excluded, so that Georgian text is not counted as Megrelian. Nine had no Georgian-script text in the Georgian or Megrelian version, two Megrelian strings were identical to the English, and one was empty. 1,067 strings remain, with 9,770 English words, 7,749 Georgian words and 7,516 Megrelian words. aligned_stats.json holds these counts and aligned.sha256 the checksums of the aligned texts.
+- **Exclusions.** 107 Mingrelian strings were identical to the Georgian and were excluded, so that Georgian text is not counted as Mingrelian. Nine had no Georgian-script text in the Georgian or Mingrelian version, two Mingrelian strings were identical to the English, and one was empty. 1,067 strings remain, with 9,770 English words, 7,749 Georgian words and 7,516 Mingrelian words. aligned_stats.json holds these counts and aligned.sha256 the checksums of the aligned texts.
 - **Tokenizers.** cl100k_base and o200k_base from the gpt-tokenizer package 4.1.0. The Llama 3, Qwen3, Gemma 3 and Mistral-Nemo tokenizer files from the @lenml packages 3.7.2, run with the Hugging Face tokenizers library 0.23.3. No special tokens were added. package-lock.json pins every version.
 - **Measure.** The parity premium of Petrov et al. (NeurIPS 2023), https://arxiv.org/abs/2305.15425.
-- **Letters check.** The scripts also count the Megrelian text with ჷ, ჸ and ჲ removed. The result is the last column of premiums.csv.
+- **Letters check.** The scripts also count the Mingrelian text with ჷ, ჸ and ჲ removed. The result is the last column of premiums.csv.
+- **Names.** File and column names in this folder use the earlier spelling, megrelian.
 
 To rerun, with Node.js and Python 3, fluent.syntax and tokenizers 0.23.3 installed:
 
@@ -53,8 +54,8 @@ python3 compute_premiums.py
 
 - Interface text is short and practical, and volunteers translated it from English, so its word order and vocabulary may follow English. It is one register of each language.
 - The sample is small, at about 12,000 English tokens.
-- Some of the 107 excluded strings will be words that Megrelian and Georgian share, and some may be Georgian left untranslated. The measurement cannot tell them apart.
-- Kona2's tokenizer was not measured, and neither was Megrelian text from other sources such as Wikipedia, because Hugging Face and Wikipedia could not be reached from the environment where the measurement ran.
+- Some of the 107 excluded strings will be words that Mingrelian and Georgian share, and some may be Georgian left untranslated. The measurement cannot tell them apart.
+- Kona2's tokenizer was not measured, and neither was Mingrelian text from other sources such as Wikipedia, because Hugging Face and Wikipedia could not be reached from the environment where the measurement ran.
 - Claude's and Gemini's tokenizers are not published and were not measured.
 
 ## Licence
