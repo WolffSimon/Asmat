@@ -5,7 +5,7 @@ Dutu is a distinct project within this repository. It is a scoping study for a l
 ## Contents
 
 - [token-cost/](token-cost/): what Mingrelian costs on six tokenizers, measured against Georgian and English on the same strings, 18 October 2026.
-- The scoping paper, "Towards a Mingrelian LLM", will be added here.
+- [scoping-paper.md](scoping-paper.md): "Towards a Mingrelian large language model: a scoping study", a working paper, version 0.1, 18 October 2026.
 
 ## Starting point
 
