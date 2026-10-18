@@ -1,0 +1,110 @@
+{
+ "counts": {
+  "llama3": {
+   "en": {
+    "tokens": 12229,
+    "roundtrip": true
+   },
+   "ka": {
+    "tokens": 118239,
+    "roundtrip": true
+   },
+   "xmf": {
+    "tokens": 113122,
+    "roundtrip": true
+   },
+   "xmf_without_extra_letters": {
+    "tokens": 112647,
+    "roundtrip": true
+   }
+  },
+  "qwen3": {
+   "en": {
+    "tokens": 12286,
+    "roundtrip": true
+   },
+   "ka": {
+    "tokens": 63668,
+    "roundtrip": true
+   },
+   "xmf": {
+    "tokens": 61360,
+    "roundtrip": true
+   },
+   "xmf_without_extra_letters": {
+    "tokens": 60888,
+    "roundtrip": true
+   }
+  },
+  "gemma3": {
+   "en": {
+    "tokens": 12775,
+    "roundtrip": true
+   },
+   "ka": {
+    "tokens": 28665,
+    "roundtrip": true
+   },
+   "xmf": {
+    "tokens": 34069,
+    "roundtrip": true
+   },
+   "xmf_without_extra_letters": {
+    "tokens": 33716,
+    "roundtrip": true
+   }
+  },
+  "mistral_nemo": {
+   "en": {
+    "tokens": 12479,
+    "roundtrip": true
+   },
+   "ka": {
+    "tokens": 31384,
+    "roundtrip": true
+   },
+   "xmf": {
+    "tokens": 35550,
+    "roundtrip": true
+   },
+   "xmf_without_extra_letters": {
+    "tokens": 35148,
+    "roundtrip": true
+   }
+  }
+ },
+ "letters": {
+  "llama3": {
+   "\u10f7": 2,
+   "\u10f8": 2,
+   "\u10f2": 2,
+   "\u10f5": 2,
+   "\u10f6": 2,
+   "\u10f3": 2
+  },
+  "qwen3": {
+   "\u10f7": 2,
+   "\u10f8": 2,
+   "\u10f2": 2,
+   "\u10f5": 2,
+   "\u10f6": 2,
+   "\u10f3": 2
+  },
+  "gemma3": {
+   "\u10f7": 1,
+   "\u10f8": 3,
+   "\u10f2": 1,
+   "\u10f5": 3,
+   "\u10f6": 3,
+   "\u10f3": 3
+  },
+  "mistral_nemo": {
+   "\u10f7": 2,
+   "\u10f8": 2,
+   "\u10f2": 2,
+   "\u10f5": 2,
+   "\u10f6": 2,
+   "\u10f3": 2
+  }
+ }
+}

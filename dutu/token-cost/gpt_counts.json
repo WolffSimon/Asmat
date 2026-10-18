@@ -1,0 +1,58 @@
+{
+ "counts": {
+  "cl100k": {
+   "en": {
+    "tokens": 12233,
+    "roundtrip": true
+   },
+   "ka": {
+    "tokens": 118245,
+    "roundtrip": true
+   },
+   "xmf": {
+    "tokens": 113126,
+    "roundtrip": true
+   },
+   "xmf_without_extra_letters": {
+    "tokens": 112651,
+    "roundtrip": true
+   }
+  },
+  "o200k": {
+   "en": {
+    "tokens": 12121,
+    "roundtrip": true
+   },
+   "ka": {
+    "tokens": 22361,
+    "roundtrip": true
+   },
+   "xmf": {
+    "tokens": 30547,
+    "roundtrip": true
+   },
+   "xmf_without_extra_letters": {
+    "tokens": 30113,
+    "roundtrip": true
+   }
+  }
+ },
+ "letters": {
+  "cl100k": {
+   "ჷ": 2,
+   "ჸ": 2,
+   "ჲ": 2,
+   "ჵ": 2,
+   "ჶ": 2,
+   "ჳ": 2
+  },
+  "o200k": {
+   "ჷ": 2,
+   "ჸ": 2,
+   "ჲ": 2,
+   "ჵ": 2,
+   "ჶ": 2,
+   "ჳ": 2
+  }
+ }
+}

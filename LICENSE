@@ -1,12 +1,14 @@
 Copyright (c) 2026 Matthew Wolff Simon
 
-The text in this repository (README.md, DESIGN.md and the files in briefs/)
-is licensed under the Creative Commons Attribution 4.0 International licence
-(CC BY 4.0).
+The text and data in this repository (README.md, DESIGN.md, the files in
+briefs/, and the READMEs, counts and premiums in dutu/) are licensed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0). The
+scripts and package files in dutu/token-cost/ are licensed under the MIT
+licence; see LICENSE-CODE.
 
-You may share and adapt this material for any purpose, including commercial
-purposes, provided you give appropriate credit, provide a link to the licence
-and indicate if changes were made.
+You may share and adapt the CC BY 4.0 material for any purpose, including
+commercial purposes, provided you give appropriate credit, provide a link to
+the licence and indicate if changes were made.
 
 Passages quoted from the works cited in the briefs, and the figures those
 works report, remain subject to the works' own terms.

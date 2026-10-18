@@ -1,0 +1,25 @@
+{
+ "messages": {
+  "en": 1822,
+  "ka": 1822,
+  "xmf": 1186
+ },
+ "in_all_three": 1186,
+ "dropped": {
+  "empty": 1,
+  "not_georgian_script": 9,
+  "xmf_same_as_en": 2,
+  "xmf_same_as_ka": 107
+ },
+ "kept": 1067,
+ "characters": {
+  "en": 58576,
+  "ka": 64960,
+  "xmf": 62431
+ },
+ "words": {
+  "en": 9770,
+  "ka": 7749,
+  "xmf": 7516
+ }
+}

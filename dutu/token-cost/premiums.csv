@@ -1,0 +1,7 @@
+tokenizer,english_tokens,georgian_tokens,megrelian_tokens,georgian_premium,megrelian_premium,megrelian_over_georgian,megrelian_premium_without_extra_letters
+cl100k,12233,118245,113126,9.67,9.25,0.96,9.21
+o200k,12121,22361,30547,1.84,2.52,1.37,2.48
+llama3,12229,118239,113122,9.67,9.25,0.96,9.21
+qwen3,12286,63668,61360,5.18,4.99,0.96,4.96
+gemma3,12775,28665,34069,2.24,2.67,1.19,2.64
+mistral_nemo,12479,31384,35550,2.51,2.85,1.13,2.82

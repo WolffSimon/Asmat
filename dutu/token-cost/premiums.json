@@ -1,0 +1,38 @@
+{
+ "cl100k": {
+  "ka": 9.67,
+  "xmf": 9.25,
+  "xmf_over_ka": 0.96,
+  "xmf_without_extra_letters": 9.21
+ },
+ "o200k": {
+  "ka": 1.84,
+  "xmf": 2.52,
+  "xmf_over_ka": 1.37,
+  "xmf_without_extra_letters": 2.48
+ },
+ "llama3": {
+  "ka": 9.67,
+  "xmf": 9.25,
+  "xmf_over_ka": 0.96,
+  "xmf_without_extra_letters": 9.21
+ },
+ "qwen3": {
+  "ka": 5.18,
+  "xmf": 4.99,
+  "xmf_over_ka": 0.96,
+  "xmf_without_extra_letters": 4.96
+ },
+ "gemma3": {
+  "ka": 2.24,
+  "xmf": 2.67,
+  "xmf_over_ka": 1.19,
+  "xmf_without_extra_letters": 2.64
+ },
+ "mistral_nemo": {
+  "ka": 2.51,
+  "xmf": 2.85,
+  "xmf_over_ka": 1.13,
+  "xmf_without_extra_letters": 2.82
+ }
+}

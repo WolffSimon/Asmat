@@ -1,0 +1,5 @@
+node_modules/
+corpus/
+aligned/
+cv-src/
+__pycache__/

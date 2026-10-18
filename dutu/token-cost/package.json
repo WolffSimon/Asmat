@@ -1,0 +1,15 @@
+{
+  "name": "dutu-token-cost",
+  "version": "1.0.0",
+  "description": "Token cost of Megrelian and Georgian on six tokenizers",
+  "author": "Matthew Wolff Simon",
+  "license": "MIT",
+  "dependencies": {
+    "@lenml/tokenizer-gemma3": "^3.7.2",
+    "@lenml/tokenizer-llama3": "^3.7.2",
+    "@lenml/tokenizer-mistral_nemo": "3.7.2",
+    "@lenml/tokenizer-qwen3": "^3.7.2",
+    "gpt-tokenizer": "^4.0.0"
+  },
+  "private": true
+}
